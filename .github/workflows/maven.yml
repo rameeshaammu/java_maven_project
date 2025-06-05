@@ -28,7 +28,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: trstringer/manual-approval@v1
-        with: 
+        with:
+          secret: ${{ github.TOKEN }}
           approvers: rameeshaammu
           minimum-approvals: 1
           issue-title: "Deploying test to staging"
